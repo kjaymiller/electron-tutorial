@@ -3,17 +3,37 @@
   <head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans" rel="stylesheet">
   </head>
-  <body>
-    <h1>Hello Wheelies!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    This is an electron app on how to build an electron app.
-  </body>
 
-  <a href="install.html">
-   Click Here to Get Started</a>
+  <body>
+<!-- All of the Node.js APIs are available in this renderer process. -->
+<div class="sidenav">
+  <ul>
+    <li id="whoAmI">Who am I</li>
+    <li id="whatIsElectron">What is Electron</li>
+    <li id="hard">Is it hard</li>
+    <li id="install">Lets get started</li>
+    <li id="gotchas">Some Gotchas that Got me</li>
+  </ul>
+</div>
+<div class="content">
+<h1>Hello Wheelies!</h1>
+This is an electron app on how to build an electron app.
+<div class="text"></div>
+</div>
+  </body>
+  <script>
+  try {
+    $ = jQuery = module.exports;
+  } catch(e) {}
+</script>
+<script>window.$ = window.jQuery = require('jquery');</script>
+<script src="index.js" />
   <script>
     // You can also require other files to run in this process
     require('./renderer.js')
   </script>
-</html>
+  </html>

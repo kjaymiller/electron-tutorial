@@ -1,0 +1,28 @@
+.sidenav {
+  width: 25%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 5em 0 0 1em;
+  text-align: left;
+  font-size: 1.5em;
+}
+
+.sidenav ul li {
+  list-style-image: none;
+}
+
+
+.content {
+  margin-left: 25%;
+  padding: 1em 5em;
+}
+
+body {font-family: 'Indie Flower', cursive;}
+
+.text {font-family: 'Open Sans', sans-serif;}
+
+#whoAmI img {
+  border-radius: 50%;
+  float: right;}
