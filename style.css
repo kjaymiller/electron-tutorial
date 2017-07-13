@@ -26,3 +26,13 @@ body {font-family: 'Indie Flower', cursive;}
 #whoAmI img {
   border-radius: 50%;
   float: right;}
+
+.flex img {width: 100px;}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  list-style-type: none;
+  text-align: center;
+  flex-wrap: wrap;
+}
