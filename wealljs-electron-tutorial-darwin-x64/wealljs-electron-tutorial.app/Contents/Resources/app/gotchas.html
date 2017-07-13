@@ -1,0 +1,30 @@
+<h1>Gotcha's</h1>
+<h2>If you are going to use Angular/React or another framework...</h2>
+<p>Import the Framework before you load electron.</p>
+<h2>jQuery needs to be imported and loaded</h2>
+<p>install jQuery through npm</p>
+<code> npm install -g jQuery </code>
+<p>Use the following in your html to get jQuery working</p>
+
+<quote>
+<code>
+  &#x3C;script&#x3E;
+try {
+  $ = jQuery = module.exports;
+} catch(e) {}
+&#x3C;/script&#x3E;<br/>
+&#x3C;script&#x3E;window.$ = window.jQuery = require(&#x27;jquery&#x27;);&#x3C;/script&#x3E;</br>
+&#x3C;script src=&#x22;index.js&#x22; /&#x3E;</br>
+</code>
+</quote>
+
+<h2>Be Careful with <code>&#x3C;/a&#x3E;</code> tags</h2>
+<p>Since the electron window is a browser window, it will load urls in the existing browser (<em>even if you use <code>target="_blank" or "_new"</code></em>). To load urls into a browser, you can use the   <code>shell</code> method.</p>
+
+<quote><code>
+const {shell} = require('electron')<br><br>
+// for your a tag
+&#x3C;a href="#" onClick="shell.openExternal('http://wealljs.org')""&#x3E;WeAlljs.org&#x3C;/a&#x3E;"
+</code></quote>
+
+<br>

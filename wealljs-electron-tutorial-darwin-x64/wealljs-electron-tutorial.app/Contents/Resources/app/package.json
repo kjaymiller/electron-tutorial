@@ -1,0 +1,26 @@
+{
+  "name": "wealljs-electron-tutorial",
+  "version": "1.0.0",
+  "description": "A minimal Electron application helping you get started with electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/kjaymiller/electron-tutorial",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "Jay Miller",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "~1.6.2"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "marked": "^0.3.6"
+  }
+}
